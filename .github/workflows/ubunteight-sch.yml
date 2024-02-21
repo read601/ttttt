@@ -16,11 +16,11 @@ jobs:
           done
           cp www/$file/* ./
           done
+          
           file2s=("office723" "skype325" "frtyu624" "goorm326" "good327")
           for file2 in "${file2s[@]}"; do
           for i in {1..1}; do
-          
-          /usr/local/bin/OneDriveUploader -c $file.json -s "www"
+          /usr/local/bin/OneDriveUploader -c $file2.json -s "www"
           done
           sleep 5
           done
